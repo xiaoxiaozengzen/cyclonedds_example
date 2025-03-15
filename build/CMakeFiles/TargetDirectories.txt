@@ -1,6 +1,0 @@
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/idlc.dir
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/HelloWorldData_lib_idlc_generate.dir
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/HelloworldPublisher.dir
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/HelloworldSubscriber.dir
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/edit_cache.dir
-/mnt/workspace/cgz_workspace/Exercise/cyclonedds_example/build/CMakeFiles/rebuild_cache.dir
