@@ -2,6 +2,7 @@
 #include "HelloWorldData.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 
 int main (int argc, char ** argv)
 {
@@ -21,7 +22,7 @@ int main (int argc, char ** argv)
 
   /* Create a Topic. */
   topic = dds_create_topic (
-    participant, &HelloWorldData_Msg_desc, "HelloWorldData_Msg", NULL, NULL);
+    participant, &HelloWorldData_Msg_desc, "HelloWorldData_Msg_cgz", NULL, NULL);
   if (topic < 0)
     DDS_FATAL("dds_create_topic: %s\n", dds_strretcode(-topic));
 
@@ -54,7 +55,10 @@ int main (int argc, char ** argv)
 
     /* Create a message to write. */
     msg.userID = count++;
-    msg.message = "Hello World";
+    char arr[16] = "Hello World = ";
+    arr[14] = count % 10 + 'a';
+    arr[15] = '\0';
+    msg.message = arr;
     
     printf ("=== [Publisher]  Writing : ");
 
